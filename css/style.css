@@ -16,6 +16,9 @@
   --glow-1: rgba(52, 211, 153, .16);
   --glow-2: rgba(34, 211, 238, .12);
   --tile-glow: rgba(52, 211, 153, .13);
+  --status-bg: rgba(52, 211, 153, .1);
+  --status-line: rgba(52, 211, 153, .28);
+  --btn-solid-text: #04130f;
   --chip-text: #c3cbda;
   --status-text: #b8f5df;
   --h1-top: #ffffff;
@@ -29,28 +32,31 @@
   color-scheme: dark;
 }
 :root[data-theme="light"] {
-  --bg: #f5f7fa;
-  --surface: #ffffff;
-  --surface-2: #f0f3f7;
-  --line: #e2e7ee;
-  --line-2: #cfd6e0;
-  --text: #0f172a;
-  --muted: #5b6577;
-  --a1: #047857;
-  --a2: #0e7490;
-  --g1: #10b981;
-  --g2: #06b6d4;
-  --nav-bg: rgba(255, 255, 255, .78);
-  --dots: rgba(15, 23, 42, .09);
-  --glow-1: rgba(16, 185, 129, .14);
-  --glow-2: rgba(6, 182, 212, .12);
-  --tile-glow: rgba(16, 185, 129, .10);
-  --chip-text: #334155;
-  --status-text: #065f46;
-  --h1-top: #0f172a;
-  --h1-bottom: #475569;
-  --term-bg: #0d111a;
-  --tile-shadow: 0 1px 2px rgba(15, 23, 42, .04), 0 4px 16px rgba(15, 23, 42, .05);
+  --bg: #f1ecff;
+  --surface: #fbf9ff;
+  --surface-2: #efe9fd;
+  --line: #e1d8f6;
+  --line-2: #cdbfef;
+  --text: #1d1433;
+  --muted: #5f5679;
+  --a1: #6d28d9;
+  --a2: #7c3aed;
+  --g1: #7c3aed;
+  --g2: #c026d3;
+  --nav-bg: rgba(251, 249, 255, .8);
+  --dots: rgba(91, 33, 182, .12);
+  --glow-1: rgba(139, 92, 246, .28);
+  --glow-2: rgba(217, 70, 239, .18);
+  --tile-glow: rgba(139, 92, 246, .12);
+  --chip-text: #3b2d63;
+  --status-text: #5b21b6;
+  --status-bg: rgba(124, 58, 237, .09);
+  --status-line: rgba(124, 58, 237, .28);
+  --btn-solid-text: #ffffff;
+  --h1-top: #1d1433;
+  --h1-bottom: #6d28d9;
+  --term-bg: #1a1430;
+  --tile-shadow: 0 1px 2px rgba(76, 29, 149, .05), 0 6px 20px rgba(76, 29, 149, .07);
   color-scheme: light;
 }
 
@@ -118,7 +124,7 @@ body, .tile, .nav, .btn, .chips span { transition: background-color .25s ease, b
   transition: border-color .15s ease, transform .15s ease;
 }
 .btn:hover { border-color: var(--a1); transform: translateY(-1px); }
-.btn-solid { background: var(--grad); border-color: transparent; color: #04130f; font-weight: 600; }
+.btn-solid { background: var(--grad); border-color: transparent; color: var(--btn-solid-text); font-weight: 600; }
 .btn-solid:hover { border-color: transparent; filter: brightness(1.1); }
 .btn-sm { padding: 9px 16px; border-radius: 999px; font-size: 14px; }
 .actions { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -157,9 +163,9 @@ body, .tile, .nav, .btn, .chips span { transition: background-color .25s ease, b
   display: inline-flex; align-items: center; gap: 9px;
   font-size: 13.5px; color: var(--status-text);
   padding: 6px 12px 6px 10px; border-radius: 999px;
-  background: rgba(52, 211, 153, .1); border: 1px solid rgba(52, 211, 153, .28);
+  background: var(--status-bg); border: 1px solid var(--status-line);
 }
-.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--a1); box-shadow: 0 0 0 0 rgba(52, 211, 153, .6); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--a1); box-shadow: 0 0 0 0 var(--status-line); }
 
 /* hero bento */
 .bento { display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--gap); }
@@ -183,7 +189,7 @@ body, .tile, .nav, .btn, .chips span { transition: background-color .25s ease, b
 }
 
 .tile-term { grid-column: span 6; padding: 0; background: var(--term-bg); border-color: var(--line-2); }
-:root[data-theme="light"] .tile-term { --line: #1c2434; --line-2: #2a3449; --text: #e8ecf4; --muted: #8d97ab; --a1: #34d399; --a2: #22d3ee; }
+:root[data-theme="light"] .tile-term { --line: #2c2347; --line-2: #3d3263; --text: #ede9fe; --muted: #a59cc4; --a1: #c4b5fd; --a2: #f0abfc; }
 .term-bar { display: flex; align-items: center; gap: 7px; padding: 12px 16px; border-bottom: 1px solid var(--line); }
 .term-bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--line-2); }
 .term-bar span { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-left: 8px; }
@@ -281,7 +287,7 @@ body, .tile, .nav, .btn, .chips span { transition: background-color .25s ease, b
   .hero .tile:nth-child(4) { animation-delay: .18s; }
   .hero .tile:nth-child(5) { animation-delay: .22s; }
   .hero .tile:nth-child(6) { animation-delay: .26s; }
-  @keyframes pulse { 70% { box-shadow: 0 0 0 8px rgba(52, 211, 153, 0); } 100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); } }
+  @keyframes pulse { 70% { box-shadow: 0 0 0 8px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
   @keyframes blink { 50% { opacity: 0; } }
   @keyframes pop { from { opacity: 0; transform: translateY(18px) scale(.98); } }
 }
