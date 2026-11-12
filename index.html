@@ -3,170 +3,171 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Md. Fahim Ul Hoque — Software Engineer</title>
-<meta name="description" content="Md. Fahim Ul Hoque — final-year CSE student at IIUC building Flutter apps, full-stack web apps and AI-powered features.">
-<meta property="og:title" content="Md. Fahim Ul Hoque — Software Engineer">
+<title>Md. Fahim Ul Hoque, software engineer</title>
+<meta name="description" content="Final-year CSE student at IIUC building Flutter apps, full-stack web apps and AI features. Open to software engineering internships.">
+<meta property="og:title" content="Md. Fahim Ul Hoque, software engineer">
 <meta property="og:description" content="Flutter, full-stack web and applied AI projects.">
-<meta property="og:image" content="https://fahim0huq.github.io/img/mian.jpg">
-<link rel="icon" type="image/jpeg" href="img/mian.jpg">
+<meta property="og:image" content="https://fahim0huq.github.io/img/fahim-avatar.jpg">
+<link rel="icon" type="image/jpeg" href="img/fahim-avatar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="nav">
-  <a class="brand" href="#top">fahim<span>.</span></a>
-  <nav>
-    <a href="#projects">Projects</a>
+<header class="topbar">
+  <a class="topbar-name" href="#top">Fahim Ul Hoque</a>
+  <nav class="topbar-links" aria-label="Sections">
+    <a href="#work">Work</a>
     <a href="#skills">Skills</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
-    <a class="btn small" href="cv/MD_Fahim_Ul_Hoque_CV.pdf" target="_blank" rel="noopener">CV</a>
   </nav>
+  <a class="pill pill-sun" href="cv/MD_Fahim_Ul_Hoque_CV.pdf" target="_blank" rel="noopener">Download CV</a>
 </header>
 
 <main id="top">
 
-<section class="hero wrap">
-  <div class="hero-text">
-    <p class="kicker">// software engineer · flutter · full-stack · applied AI</p>
-    <h1>Md. Fahim Ul Hoque</h1>
-    <p class="lead">Final-year CSE student at IIUC who builds complete products — Flutter apps with Node.js and Firebase backends, React/Next.js and Django web apps, and LLM features wired into real user flows.</p>
-    <div class="cta">
-      <a class="btn" href="cv/MD_Fahim_Ul_Hoque_CV.pdf" target="_blank" rel="noopener">Download CV</a>
-      <a class="btn ghost" href="https://github.com/fahim0huq" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn ghost" href="https://linkedin.com/in/fahimul-haque" target="_blank" rel="noopener">LinkedIn</a>
+<section class="hero">
+  <div class="hero-copy">
+    <h1 class="hero-name"><span>Md. Fahim</span><span>Ul Hoque</span></h1>
+    <p class="hero-line">I build apps people can actually use: Flutter on the phone, Node.js and Django behind it, and AI where it earns its place. Final-year CSE student in Chittagong, looking for a software engineering internship.</p>
+    <div class="hero-actions">
+      <a class="pill pill-sun" href="#work">See my work</a>
+      <a class="pill" href="https://github.com/fahim0huq" target="_blank" rel="noopener">GitHub</a>
+      <a class="pill" href="https://linkedin.com/in/fahimul-haque" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <ul class="facts">
-      <li><b>3.57</b><span>CGPA / 4.00</span></li>
-      <li><b>16.7K</b><span>lines of Dart in OsudSheba</span></li>
-      <li><b>1</b><span>paper accepted</span></li>
-    </ul>
   </div>
-  <div class="hero-photo">
-    <img src="img/mian-removebg-preview.png" alt="Portrait of Md. Fahim Ul Hoque" width="434" height="575">
+  <figure class="hero-photo">
+    <img src="img/fahim.jpg" alt="Fahim standing in front of green trees, wearing a dark suit" width="1200" height="1600">
+  </figure>
+</section>
+
+<section class="trio" aria-label="What I do">
+  <div>
+    <h2>Mobile</h2>
+    <p>Flutter apps with real state management, offline storage, notifications and on-device ML.</p>
+  </div>
+  <div>
+    <h2>Web and backend</h2>
+    <p>React and Next.js front ends on top of Express and Django REST APIs, with auth, tests and webhooks.</p>
+  </div>
+  <div>
+    <h2>Applied AI</h2>
+    <p>Gemini and Hugging Face models wired into product flows, plus ML research accepted for publication.</p>
   </div>
 </section>
 
-<section id="projects" class="wrap">
-  <h2><span class="num">01</span> Featured projects</h2>
+<section id="work" class="block">
+  <h2 class="block-title">Work</h2>
 
-  <article class="project feature">
-    <div class="p-head">
+  <article class="case">
+    <div class="case-intro">
       <h3>OsudSheba</h3>
-      <span class="tag-line">AI medication adherence platform</span>
+      <p class="case-kind">Medication reminders that read your prescription</p>
+      <p>A Bangla and English app that helps patients take medicines on time and lets caregivers follow along. Photograph a prescription and the app turns it into a dose schedule with voice reminders.</p>
+      <p class="case-stack">Flutter, Riverpod, Node.js, Express, Firebase, Gemini, Next.js, TypeScript</p>
+      <div class="case-links">
+        <a class="pill pill-sun" href="https://github.com/fahim0huq/osudsheba-" target="_blank" rel="noopener">App and API code</a>
+        <a class="pill" href="https://github.com/fahim0huq/osudsheba-web" target="_blank" rel="noopener">Website code</a>
+      </div>
     </div>
-    <p>A bilingual (Bangla/English) app that helps patients take medicines on time and lets caregivers follow along. Users photograph a prescription; the app reads it and turns it into a dose schedule with voice reminders.</p>
-    <ul class="points">
-      <li>~16.7K lines of Dart across 11 feature modules with Riverpod, GoRouter route guards and Hive offline storage.</li>
-      <li>Prescription scanning: on-device ML Kit OCR plus an Express endpoint calling Gemini 2.5 Flash that returns structured medicine/dose JSON for review.</li>
-      <li>Backend secured with Firebase ID-token and subscription middleware, rate limiting and HMAC-SHA256-verified carrier-billing webhooks.</li>
-      <li>Bangla text-to-speech dose alerts, adherence charts, caregiver dashboard, and a Next.js/TypeScript companion site with OTP subscription.</li>
-    </ul>
-    <div class="stack"><span>Flutter</span><span>Riverpod</span><span>Node.js</span><span>Express</span><span>Firebase</span><span>Gemini</span><span>Next.js</span><span>TypeScript</span></div>
-    <div class="links"><a href="https://github.com/fahim0huq/osudsheba-" target="_blank" rel="noopener">App &amp; API ↗</a><a href="https://github.com/fahim0huq/osudsheba-web" target="_blank" rel="noopener">Website ↗</a></div>
+    <dl class="case-facts">
+      <div><dt>16.7K lines of Dart</dt><dd>Eleven feature modules with Riverpod, guarded routes and Hive offline storage.</dd></div>
+      <div><dt>Prescription scanning</dt><dd>On-device ML Kit OCR, then Gemini 2.5 Flash returns structured medicine and dose data for review.</dd></div>
+      <div><dt>A backend that says no</dt><dd>Firebase token checks, subscription gating, rate limits and HMAC-verified carrier-billing webhooks.</dd></div>
+      <div><dt>Built for Bangladesh</dt><dd>Bangla voice alerts, adherence charts, a caregiver dashboard and mobile-operator billing.</dd></div>
+    </dl>
   </article>
 
-  <div class="grid">
-    <article class="project">
-      <div class="p-head"><h3>Echorithm</h3><span class="tag-line">Personalized news aggregator · team of 3</span></div>
-      <p>Pulls articles from NewsAPI, GNews and Mediastack into a Django REST API with JWT auth, then runs zero-shot categorization (BART-MNLI), summarization (BART-CNN, T5 fallback), NER and sentiment to build a filtered personal feed in React.</p>
-      <div class="stack"><span>React</span><span>Django REST</span><span>MongoDB</span><span>Transformers</span></div>
-      <div class="links"><a href="https://github.com/fahim0huq/Personalized_News_Aggregator" target="_blank" rel="noopener">GitHub ↗</a></div>
-    </article>
-
-    <article class="project">
-      <div class="p-head"><h3>AccessWatch</h3><span class="tag-line">Flood access field app</span></div>
-      <p>Flutter app on top of a NISAR satellite flood analysis: ranks cut-off communities by priority, compares safest vs. shortest routes and access mode, and produces mission cards for field teams, with custom map rendering.</p>
-      <div class="stack"><span>Flutter</span><span>Python</span><span>GeoJSON</span><span>SAR</span></div>
-      <div class="links"><a href="https://github.com/fahim0huq/AccessWatch" target="_blank" rel="noopener">GitHub ↗</a></div>
-    </article>
-
-    <article class="project">
-      <div class="p-head"><h3>Attendance Management</h3><span class="tag-line">Full-stack web app</span></div>
-      <p>REST API for student CRUD, attendance logging and per-student summaries, with a React 19 front end and Jest unit tests for the attendance logic.</p>
-      <div class="stack"><span>React</span><span>Vite</span><span>Express</span><span>MongoDB</span><span>Jest</span></div>
-      <div class="links"><a href="https://github.com/fahim0huq/attendence_management" target="_blank" rel="noopener">GitHub ↗</a></div>
-    </article>
-
-    <article class="project">
-      <div class="p-head"><h3>Transportation Management</h3><span class="tag-line">IIUC campus bus app</span></div>
-      <p>Authority panel for routes and bus allocation, Firebase login, local SQLite storage and contact lookup; distributed to testers as an APK.</p>
-      <div class="stack"><span>Flutter</span><span>Firebase Auth</span><span>sqflite</span><span>GetX</span></div>
-      <div class="links"><a href="https://github.com/fahim0huq/transportation_management_system_f" target="_blank" rel="noopener">GitHub ↗</a></div>
-    </article>
-
-    <article class="project">
-      <div class="p-head"><h3>Task Manager</h3><span class="tag-line">Flutter + REST</span></div>
-      <p>Sign-up and login with email-PIN password recovery, token persistence, a New → In Progress → Completed / Cancelled workflow and profile photo upload.</p>
-      <div class="stack"><span>Flutter</span><span>REST API</span><span>SharedPreferences</span></div>
-      <div class="links"><a href="https://github.com/fahim0huq/Task-Manager" target="_blank" rel="noopener">GitHub ↗</a></div>
-    </article>
-
-    <article class="project">
-      <div class="p-head"><h3>Spider Bot</h3><span class="tag-line">Hardware · team of 4</span></div>
-      <p>Quadruped robot on Arduino Uno with servo-controlled gait, written in C++.</p>
-      <div class="stack"><span>C++</span><span>Arduino</span></div>
-      <div class="links"><a href="https://github.com/fahim0huq/spider_bot" target="_blank" rel="noopener">GitHub ↗</a></div>
-    </article>
-  </div>
-
-  <h3 class="minor">More on GitHub</h3>
-  <ul class="mini">
-    <li><a href="https://github.com/fahim0huq/Notes-Management-System" target="_blank" rel="noopener">Notes Management</a><span>Flutter · Firestore CRUD</span></li>
-    <li><a href="https://github.com/fahim0huq/Student-Grader-Tracker" target="_blank" rel="noopener">Student Grade Tracker</a><span>Flutter · Provider · theming</span></li>
-    <li><a href="https://github.com/fahim0huq/Password-Manager" target="_blank" rel="noopener">Password Manager</a><span>C++ CLI</span></li>
-    <li><a href="https://github.com/fahim0huq/daily_water_tracker" target="_blank" rel="noopener">Daily Water Tracker</a><span>Flutter</span></li>
-    <li><a href="https://github.com/fahim0huq/Flutter-CRUD-project" target="_blank" rel="noopener">Product CRUD</a><span>Flutter · REST</span></li>
-    <li><a href="https://github.com/fahim0huq/dream11" target="_blank" rel="noopener">Dream11 clone</a><span>React · Tailwind</span></li>
+  <ul class="rows">
+    <li class="row">
+      <div class="row-name"><h3>Echorithm</h3><p>News aggregator, team of 3</p></div>
+      <p class="row-about">Pulls articles from three news APIs into a Django REST API, then categorizes, summarizes and scores them with BART and T5 models to build a personal feed in React.</p>
+      <div class="row-meta"><p>React, Django REST, MongoDB, Transformers</p><a href="https://github.com/fahim0huq/Personalized_News_Aggregator" target="_blank" rel="noopener">View code</a></div>
+    </li>
+    <li class="row">
+      <div class="row-name"><h3>AccessWatch</h3><p>Flood access field app</p></div>
+      <p class="row-about">Turns a NISAR satellite flood analysis into something a rescue team can use: which cut-off communities to reach first, the safest route, and a mission card for each.</p>
+      <div class="row-meta"><p>Flutter, Python, GeoJSON, SAR data</p><a href="https://github.com/fahim0huq/AccessWatch" target="_blank" rel="noopener">View code</a></div>
+    </li>
+    <li class="row">
+      <div class="row-name"><h3>Attendance Management</h3><p>Full-stack web app</p></div>
+      <p class="row-about">REST API for students, attendance logs and per-student summaries, with a React front end and Jest tests on the attendance logic.</p>
+      <div class="row-meta"><p>React, Vite, Express, MongoDB, Jest</p><a href="https://github.com/fahim0huq/attendence_management" target="_blank" rel="noopener">View code</a></div>
+    </li>
+    <li class="row">
+      <div class="row-name"><h3>Transportation Management</h3><p>IIUC campus bus app</p></div>
+      <p class="row-about">An authority panel for routes and bus allocation, Firebase login and local SQLite storage, shared with testers as an APK.</p>
+      <div class="row-meta"><p>Flutter, Firebase Auth, sqflite, GetX</p><a href="https://github.com/fahim0huq/transportation_management_system_f" target="_blank" rel="noopener">View code</a></div>
+    </li>
+    <li class="row">
+      <div class="row-name"><h3>Task Manager</h3><p>Flutter app on a REST API</p></div>
+      <p class="row-about">Sign-up, login and email-PIN password recovery, saved sessions, a task status workflow and profile photo upload.</p>
+      <div class="row-meta"><p>Flutter, REST API, SharedPreferences</p><a href="https://github.com/fahim0huq/Task-Manager" target="_blank" rel="noopener">View code</a></div>
+    </li>
+    <li class="row">
+      <div class="row-name"><h3>Spider Bot</h3><p>Robot, team of 4</p></div>
+      <p class="row-about">A four-legged walking robot on an Arduino Uno with a servo-controlled gait.</p>
+      <div class="row-meta"><p>C++, Arduino</p><a href="https://github.com/fahim0huq/spider_bot" target="_blank" rel="noopener">View code</a></div>
+    </li>
   </ul>
+
+  <p class="more">Smaller builds on GitHub:
+    <a href="https://github.com/fahim0huq/Notes-Management-System" target="_blank" rel="noopener">Notes with Firestore</a>,
+    <a href="https://github.com/fahim0huq/Student-Grader-Tracker" target="_blank" rel="noopener">Student Grade Tracker</a>,
+    <a href="https://github.com/fahim0huq/Password-Manager" target="_blank" rel="noopener">Password Manager in C++</a>,
+    <a href="https://github.com/fahim0huq/daily_water_tracker" target="_blank" rel="noopener">Daily Water Tracker</a> and
+    <a href="https://github.com/fahim0huq/dream11" target="_blank" rel="noopener">a Dream11 clone in React</a>.
+  </p>
 </section>
 
-<section id="skills" class="wrap">
-  <h2><span class="num">02</span> Skills</h2>
-  <div class="skills">
-    <div><h4>Languages</h4><p>Dart, JavaScript, TypeScript, Python, C, C++, Java, SQL</p></div>
-    <div><h4>Mobile</h4><p>Flutter (Android, iOS, Web), Riverpod, Provider, GetX, GoRouter, Hive, sqflite, ML Kit</p></div>
-    <div><h4>Web &amp; Backend</h4><p>React, Next.js, Node.js, Express, Django REST Framework, ASP.NET Core (learning), REST, JWT, Tailwind</p></div>
-    <div><h4>Data &amp; Cloud</h4><p>MongoDB, PostgreSQL, SQLite, Firebase Auth / Firestore / Admin SDK</p></div>
-    <div><h4>AI / ML</h4><p>Gemini API, Hugging Face Transformers, PyTorch, scikit-learn, gradient boosting</p></div>
-    <div><h4>Tools</h4><p>Git &amp; GitHub, Jest, ESLint, Vite, Postman, Linux, Arduino</p></div>
-  </div>
+<section id="skills" class="block">
+  <h2 class="block-title">Skills</h2>
+  <dl class="skills">
+    <div><dt>Languages</dt><dd>Dart, JavaScript, TypeScript, Python, C, C++, Java, SQL</dd></div>
+    <div><dt>Mobile</dt><dd>Flutter for Android, iOS and web, Riverpod, Provider, GetX, GoRouter, Hive, sqflite, ML Kit</dd></div>
+    <div><dt>Web and backend</dt><dd>React, Next.js, Node.js, Express, Django REST Framework, REST, JWT, Tailwind. Learning ASP.NET Core.</dd></div>
+    <div><dt>Data and cloud</dt><dd>MongoDB, PostgreSQL, SQLite, Firebase Auth, Firestore and Admin SDK</dd></div>
+    <div><dt>AI and ML</dt><dd>Gemini API, Hugging Face Transformers, PyTorch, scikit-learn, gradient boosting</dd></div>
+    <div><dt>Tools</dt><dd>Git and GitHub, Jest, ESLint, Vite, Postman, Linux, Arduino</dd></div>
+  </dl>
 </section>
 
-<section id="about" class="wrap">
-  <h2><span class="num">03</span> About</h2>
+<section id="about" class="block">
+  <h2 class="block-title">About</h2>
   <div class="about">
-    <div>
-      <p>I'm a final-year Computer Science &amp; Engineering student at International Islamic University Chittagong. I like owning a feature end to end — the screen, the API behind it, and the edge cases in between. I've been doing competitive programming since 2022 and serve as Press &amp; Publication Secretary of the IIUC Computer Club.</p>
-      <p>I'm looking for a <b>software engineering internship</b> where I can ship production code and learn from experienced engineers.</p>
+    <div class="about-text">
+      <p>I'm in my final year of Computer Science and Engineering at International Islamic University Chittagong, with a CGPA of 3.57 out of 4.00.</p>
+      <p>I like owning a feature from end to end: the screen, the API behind it, and the edge cases in between. I've done competitive programming since 2022 and I'm Press and Publication Secretary of the IIUC Computer Club.</p>
     </div>
-    <div class="timeline">
-      <div class="t-item"><span class="when">2022 – now</span><b>B.Sc. in CSE, IIUC</b><span>CGPA 3.57 / 4.00</span></div>
-      <div class="t-item"><span class="when">Research</span><b>Fairness-Aware Calibrated Gradient-Boosted Models for Leakage-Safe Chronic Kidney Disease Screening and Staging in NHANES</b><span>Accepted for publication</span></div>
-      <div class="t-item"><span class="when">Certifications</span><b>Full Stack with ASP.NET Core</b><span>CPS Academy · ongoing</span></div>
-      <div class="t-item"><span class="when"></span><b>Mobile App Development using Flutter</b><span>Ostad · 2025</span></div>
-      <div class="t-item"><span class="when"></span><b>Android App Development using Flutter</b><span>EDGE Bangladesh · 2024</span></div>
-      <div class="t-item"><span class="when"></span><b>Web Development Basics</b><span>BohuBrihi · 2023</span></div>
+    <div class="about-lists">
+      <h3>Research</h3>
+      <p>Fairness-Aware Calibrated Gradient-Boosted Models for Leakage-Safe Chronic Kidney Disease Screening and Staging in NHANES. Accepted for publication.</p>
+      <h3>Certifications</h3>
+      <ul>
+        <li>Full Stack Development with ASP.NET Core, CPS Academy, ongoing</li>
+        <li>Mobile App Development using Flutter, Ostad, 2025</li>
+        <li>Android App Development using Flutter, EDGE Bangladesh, 2024</li>
+        <li>Web Development Basics, BohuBrihi, 2023</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section id="contact" class="wrap contact">
-  <h2><span class="num">04</span> Contact</h2>
-  <p class="lead">Open to software engineering internships. The fastest way to reach me is email.</p>
-  <a class="mail" href="mailto:fahimulhuq2002@gmail.com">fahimulhuq2002@gmail.com</a>
-  <div class="cta">
-    <a class="btn ghost" href="https://github.com/fahim0huq" target="_blank" rel="noopener">GitHub</a>
-    <a class="btn ghost" href="https://linkedin.com/in/fahimul-haque" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn ghost" href="cv/MD_Fahim_Ul_Hoque_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+<section id="contact" class="contact">
+  <h2>Looking for an intern who ships? Write to me.</h2>
+  <a class="contact-mail" href="mailto:fahimulhuq2002@gmail.com">fahimulhuq2002@gmail.com</a>
+  <div class="hero-actions">
+    <a class="pill" href="https://github.com/fahim0huq" target="_blank" rel="noopener">GitHub</a>
+    <a class="pill" href="https://linkedin.com/in/fahimul-haque" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="pill" href="cv/MD_Fahim_Ul_Hoque_CV.pdf" target="_blank" rel="noopener">Download CV</a>
   </div>
 </section>
 
 </main>
 
-<footer class="wrap"><span>© 2026 Md. Fahim Ul Hoque · Chittagong, Bangladesh</span></footer>
+<footer class="foot">Md. Fahim Ul Hoque, Chittagong, Bangladesh, 2026</footer>
 </body>
 </html>
